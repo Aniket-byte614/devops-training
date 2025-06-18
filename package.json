@@ -1,0 +1,20 @@
+{
+  "name": "devops-training",
+  "version": "1.0.0",
+  "description": "Using pipeline to automate deployment after a single commit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aniket-byte614/devops-training.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aniket-byte614/devops-training/issues"
+  },
+  "homepage": "https://github.com/Aniket-byte614/devops-training#readme"
+}
