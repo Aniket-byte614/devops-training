@@ -13,6 +13,6 @@ docker login
 ### Build the Docker image
 
 ```bash
-docker build -t omegazyadav/devops-training:latest .
-docker push omegazyadav/devops-training:latest
+docker build -t aniket526/devops-training:latest .
+docker push aniket526/devops-training:latest
 ```
