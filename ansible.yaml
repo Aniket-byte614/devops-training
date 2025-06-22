@@ -1,0 +1,28 @@
+---
+- name: Pull and run Docker image using Ansible
+  hosts: localhost
+  become: true
+  vars:
+    image: "aniket526/devops-training:latest"
+    dockerhub_username: "Aniket@1234@12AS"
+    dockerhub_password: "some-random-password"
+
+  tasks:
+    - name: Log in to Docker Hub
+      community.docker.docker_login:
+        username: "{{ dockerhub_username }}"
+        password: "{{ dockerhub_password }}"
+
+    - name: Pull Docker image
+      community.docker.docker_image:
+        name: "{{ image }}"
+        source: pull
+
+    - name: Run Docker container
+      community.docker.docker_container:
+        name: devops-training
+        image: "{{ image }}"
+        published_ports:
+          - "3000:3000"
+        state: started
+        restart_policy: unless-stopped
