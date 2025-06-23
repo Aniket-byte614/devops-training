@@ -4,7 +4,7 @@
   become: true
   vars:
     image: "aniket526/devops-training:latest"
-    dockerhub_username: "Aniket@1234@12AS"
+    dockerhub_username: "aniket526"
     dockerhub_password: "some-random-password"
 
   tasks:
